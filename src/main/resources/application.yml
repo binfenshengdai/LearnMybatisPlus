@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: huojw
+    password: 1234
+    url: jdbc:mysql://39.107.99.186:3306/mybatisplus?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8
+logging:
+  level:
+    com.huo.mybatisplus.mapper: debug
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: flag
+      logic-not-delete-value: 1
+      logic-delete-value: 0
+myname:
+  first: huo
